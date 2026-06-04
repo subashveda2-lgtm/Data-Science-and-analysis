@@ -1,0 +1,101 @@
+id,first_name,last_name,email,age,gender,city,country,salary,department,join_date,rating,notes
+1,Grace,Taylor,user1@yahoo.com,,Female,Tokyo,France,119398.68,,,2.7,Remote worker
+2,Uma,Garcia,,46,Female,Singapore,,93493.72,,8/18/2022,3.9,
+3,Xavier,,,,,,,103076.43,Sales,,,Remote worker
+4,,,user4@yahoo.com,37,Male,,Singapore,143633.93,Marketing,3/17/2023,2.9,Top performer
+5,Grace,Lee,user5@gmail.com,47,Non-binary,Mumbai,,137953.69,Legal,5/10/2016,2,Top performer
+6,,,,,,,,,,,,
+7,David,Brown,user7@gmail.com,51,,New York,UK,37273.52,Operations,3/23/2016,,
+8,Zoe,,,,,Tokyo,,,,,,Needs improvement
+9,Iris,White,user9@yahoo.com,31,,Sydney,France,146245.12,,7/8/2018,1.2,Remote worker
+10,,,,27,,Singapore,,,,,,
+11,,Moore,,,Non-binary,,,,,,,
+12,,Garcia,user12@yahoo.com,55,Male,Dubai,,141810.72,Marketing,7/4/2016,2.1,
+13,Quinn,Harris,,39,Male,New York,India,122534.31,Finance,10/23/2016,4,Remote worker
+14,Nathan,Jones,user14@yahoo.com,,Male,Paris,UK,72441.44,Design,12/17/2021,4,Needs improvement
+15,,,,44,Female,,,,,,,Top performer
+16,,,,,,,,,,,,
+17,,,,,,,,,,,,
+18,,,user18@yahoo.com,,,London,,90854.7,,,,
+19,,,,,,,Australia,,,,3.4,On track
+20,Victor,Miller,user20@gmail.com,40,,Singapore,India,41206.46,HR,,2.2,
+21,,,user21@yahoo.com,28,Female,Paris,Japan,126493.18,Legal,7/25/2015,,Top performer
+22,Aaron,Lee,user22@yahoo.com,50,Female,,,121897.64,,1/11/2022,2,Promoted recently
+23,Eva,,user23@yahoo.com,,Female,Toronto,India,,Design,9/13/2015,1.8,Promoted recently
+24,,,user24@gmail.com,,,,Canada,,,,3.7,Promoted recently
+25,,,,,Non-binary,,Japan,,,,,
+26,,,,,,,,,,,,
+27,,,user27@gmail.com,,,,,,HR,,3.8,
+28,Xavier,Brown,,59,Male,Sydney,Singapore,,Design,6/13/2019,,Needs improvement
+29,,,user29@yahoo.com,,,Mumbai,USA,,,3/8/2016,,
+30,Frank,Martin,user30@gmail.com,,Female,Toronto,Singapore,,HR,12/21/2015,,Promoted recently
+31,Paul,,user31@yahoo.com,,Non-binary,Sydney,UAE,31218.13,HR,,2,Promoted recently
+32,,,,,,,,,,,,
+33,Jack,Wilson,user33@yahoo.com,29,,Dubai,Japan,52984.92,Legal,2/6/2018,3.9,Remote worker
+34,Iris,Johnson,,53,Male,New York,Singapore,64120.72,Legal,12/10/2019,2.4,Top performer
+35,,Davis,,,,,,,Design,,3.3,
+36,Yara,Miller,,32,Male,,UAE,39007.78,Engineering,8/1/2019,2.8,
+37,,,,49,,,,,Finance,8/5/2016,,Needs improvement
+38,,,,,,,,,,,,
+39,,,user39@gmail.com,58,,New York,,,Sales,,,
+40,Uma,Harris,user40@gmail.com,,Female,London,Japan,69576.44,,3/26/2018,,Promoted recently
+41,Bella,,user41@gmail.com,51,Female,,France,92212.73,,1/5/2022,2.8,Top performer
+42,,Davis,user42@gmail.com,57,Female,London,France,149070.86,,3/5/2020,4.8,
+43,,,user43@yahoo.com,30,,Sydney,Canada,70785.03,Finance,1/11/2015,2.1,On track
+44,Rachel,Lee,user44@yahoo.com,37,Non-binary,Toronto,France,,Design,,2.3,Promoted recently
+45,Bella,Brown,user45@gmail.com,,Male,Tokyo,,134511.96,Sales,11/3/2015,,On track
+46,Tina,Williams,user46@yahoo.com,27,Female,London,UK,83241.43,Finance,,1.2,Top performer
+47,Carol,Thomas,user47@gmail.com,36,Female,Sydney,Germany,60639.2,,3/20/2020,4.6,
+48,Mia,Harris,user48@yahoo.com,58,,Sydney,USA,147353.34,Design,1/29/2018,1,
+49,,Wilson,user49@gmail.com,28,Non-binary,New York,,124633.26,,7/1/2021,2.5,Needs improvement
+50,Aaron,Garcia,user50@yahoo.com,43,Male,Berlin,UK,46890.84,,,,Promoted recently
+51,,,,36,,New York,Singapore,,,11/3/2021,,
+52,,,,,,,,,,,,
+53,Wendy,Lee,user53@yahoo.com,48,Non-binary,,Germany,,Finance,,3.8,Needs improvement
+54,,,,,,,,,,,,
+55,Zoe,Miller,user55@yahoo.com,59,,Paris,India,122924.23,Engineering,,4.4,Needs improvement
+56,Sam,,,48,Non-binary,,UK,87149.52,Operations,10/3/2020,3.4,Promoted recently
+57,Paul,,user57@yahoo.com,26,Male,Mumbai,Singapore,47800.06,Sales,1/31/2018,3.5,Remote worker
+58,Bella,Lee,user58@gmail.com,36,Female,Mumbai,Germany,77847.62,Marketing,,2.7,
+59,Zoe,Jones,user59@gmail.com,29,,,Canada,134171.06,Engineering,3/24/2018,,On track
+60,David,Wilson,user60@gmail.com,60,Non-binary,Sydney,USA,,Finance,10/23/2018,2.4,Needs improvement
+61,,Jackson,user61@yahoo.com,42,Non-binary,Singapore,UK,,Sales,10/6/2016,,Top performer
+62,Grace,,user62@yahoo.com,59,Female,Dubai,,35450.08,Design,,1.2,Needs improvement
+63,Frank,,user63@yahoo.com,,Non-binary,Mumbai,,77648.54,Engineering,11/22/2019,1.1,Top performer
+64,Karen,Garcia,user64@gmail.com,27,Female,,France,82281.18,Design,11/16/2020,1.3,On track
+65,,,,,,,UK,,Legal,3/15/2020,,
+66,Uma,Taylor,user66@gmail.com,50,,Berlin,Germany,105766.21,Finance,8/19/2021,1.2,
+67,,Martin,,,,,,102600.7,,,2.8,
+68,Uma,Garcia,user68@yahoo.com,55,Non-binary,,,,Finance,5/6/2019,2.6,On track
+69,,,user69@yahoo.com,,Female,,,101404.95,,,,
+70,Carol,Jackson,user70@gmail.com,33,Male,Mumbai,,53040.63,,,1.3,Top performer
+71,,,user71@gmail.com,37,Female,Singapore,Australia,120286.94,,8/16/2017,3.1,On track
+72,,Miller,user72@gmail.com,25,,,,,,,,Top performer
+73,Olivia,Martin,user73@yahoo.com,50,Female,New York,Canada,36390.83,Operations,8/23/2017,,Top performer
+74,Wendy,Jones,,27,,,,,,,,
+75,,,,,,,,,,,,
+76,,,,55,Female,London,,,,5/19/2019,,
+77,Xavier,Smith,user77@yahoo.com,,Non-binary,,Japan,35320.28,Operations,,1.7,
+78,,,,54,Female,,,,,3/17/2018,,
+79,,Anderson,,,,Tokyo,,,,,2.1,
+80,Nathan,,,,Non-binary,,Australia,,,,,
+81,Tina,Jackson,user81@yahoo.com,45,Non-binary,Tokyo,,47133.54,Legal,5/23/2015,1.5,Needs improvement
+82,,Williams,user82@gmail.com,42,,,France,145262.41,Engineering,2/1/2017,3,Promoted recently
+83,David,Jones,user83@gmail.com,27,Non-binary,,,115144.86,,5/13/2018,4.4,
+84,,,,,,Tokyo,Singapore,136109.57,,,2.6,
+85,,Jackson,user85@gmail.com,26,,,,71341.77,,,,
+86,,Garcia,user86@yahoo.com,55,Female,London,Australia,53556.23,Finance,5/27/2016,,Remote worker
+87,,,,,,,,,,,,
+88,,,user88@yahoo.com,,Male,,,,,,1.8,
+89,Xavier,Anderson,user89@gmail.com,54,,London,,59008.54,Marketing,12/31/2017,,Needs improvement
+90,Grace,Garcia,,41,Female,New York,UK,143427.94,Legal,9/13/2017,1.9,On track
+91,,,,25,,,,73502.85,Finance,,,Promoted recently
+92,,Brown,user92@yahoo.com,43,Non-binary,Mumbai,Japan,53886.95,Design,8/10/2020,1.2,
+93,Karen,Taylor,user93@yahoo.com,59,Female,Dubai,,93880.78,,4/29/2020,4.3,
+94,Xavier,Johnson,user94@gmail.com,,Non-binary,Paris,USA,98708.43,,2/20/2017,,On track
+95,,Miller,user95@gmail.com,46,Female,,Germany,,Operations,2/15/2021,2.4,
+96,Henry,,user96@gmail.com,42,Female,Mumbai,,142044.04,Finance,3/24/2018,1.5,
+97,Diana,,,,,,,113540.56,,,,Remote worker
+98,Henry,Davis,,28,Non-binary,Tokyo,USA,145742.25,Sales,7/25/2019,,
+99,,Johnson,user99@gmail.com,24,Female,,Japan,142393.05,Finance,,1,Remote worker
+100,,,,,,Mumbai,,98133.75,,,,

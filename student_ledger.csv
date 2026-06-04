@@ -1,0 +1,51 @@
+StudentID,FirstName,LastName,DateOfBirth,Course,Year,Section,MidtermGrade,FinalGrade,CGPA,PhoneNumber,Email
+STU2024001,Sneha,Sharma,1/31/2003,Nursing,2,A,A+,A+,,9813561597,sneha.sharma92@college.edu
+STU2024002,Pooja,Joshi,2/12/2003,Civil Engineering,2,B,B-,,1.61,9860806024,
+STU2024003,Rohan,KC,2/17/2001,Law,3,,B,A,1.93,9860929647,rohan.kc82@college.edu
+STU2024004,Dev,Magar,1/1/2003,Business Admin,2,,C,A-,2.12,9888461803,dev.magar75@college.edu
+STU2024005,Sneha,Tamang,10/17/2001,Law,1,B,A+,A,2.84,9855657579,sneha.tamang56@college.edu
+STU2024006,Nikhil,Shrestha,5/7/2003,Architecture,2,A,C,A+,2.41,9842329237,nikhil.shrestha11@college.edu
+STU2024007,Riya,Rai,12/21/2002,Architecture,4,,B-,C,2.63,9855377076,
+STU2024008,Priya,Joshi,10/17/2000,Architecture,2,B,,,3.46,9823009833,priya.joshi46@college.edu
+STU2024009,Kiran,Joshi,3/23/2001,Nursing,2,A,C,B+,1.69,,kiran.joshi70@college.edu
+STU2024010,Kiran,Poudel,11/5/2001,Law,1,,F,C,2.24,9882772208,
+STU2024011,Nikhil,Thapa,1/31/2002,Business Admin,1,C,A+,,,9852462441,nikhil.thapa27@college.edu
+STU2024012,Rohan,Sharma,2/20/2005,Mass Communication,1,A,B-,A,2.42,9882909480,rohan.sharma79@college.edu
+STU2024013,Rahul,Shrestha,3/14/2001,Architecture,2,B,B,F,3.76,,rahul.shrestha36@college.edu
+STU2024014,Pooja,Basnet,2/9/2000,Business Admin,1,C,A-,C+,2.27,9838195995,pooja.basnet86@college.edu
+STU2024015,Kavya,Rai,12/26/2001,Law,1,A,A,C+,3.65,9871780854,kavya.rai30@college.edu
+STU2024016,Meera,Bista,6/25/2004,Architecture,3,A,,C+,3.47,9878642041,meera.bista74@college.edu
+STU2024017,Arjun,Karki,11/1/2004,Business Admin,3,C,C+,B-,2.24,9899245317,arjun.karki87@college.edu
+STU2024018,Shreya,Joshi,3/19/2005,Medicine,4,,B,F,3.05,9841523529,shreya.joshi29@college.edu
+STU2024019,Pooja,Acharya,3/7/2002,Law,4,B,A,C+,3.51,9884813739,pooja.acharya16@college.edu
+STU2024020,Siddharth,Silwal,8/29/2005,Law,4,A,B,F,2.1,,siddharth.silwal35@college.edu
+STU2024021,Arjun,Thapa,8/26/2004,Law,3,C,C+,,1.55,9810791358,arjun.thapa39@college.edu
+STU2024022,Rahul,Limbu,6/12/2005,Computer Science,4,B,,F,,9898986321,
+STU2024023,Dev,Joshi,4/1/2004,BBA,4,B,B-,B+,3.45,9843189803,dev.joshi3@college.edu
+STU2024024,Rahul,Karki,11/18/2001,Mass Communication,1,A,,C+,3.29,9894187049,rahul.karki90@college.edu
+STU2024025,Rohan,Bista,10/29/2003,Computer Science,4,B,C+,A-,3.91,9882232344,rohan.bista60@college.edu
+STU2024026,Siddharth,Acharya,4/1/2004,BSc Physics,1,B,B,B-,2.99,9879340535,siddharth.acharya11@college.edu
+STU2024027,Aarav,Thapa,4/20/2003,Nursing,4,C,F,B-,3.36,9870900658,aarav.thapa33@college.edu
+STU2024028,Arjun,Gurung,6/6/2005,BBA,3,A,A+,F,1.61,9826948946,arjun.gurung97@college.edu
+STU2024029,Priya,Adhikari,5/10/2005,Business Admin,1,B,,B,,,priya.adhikari78@college.edu
+STU2024030,Pooja,Bhattarai,9/3/2000,Mass Communication,1,A,A-,F,,9889699989,pooja.bhattarai5@college.edu
+STU2024031,Amit,Gurung,10/7/2004,Business Admin,2,C,B,,2.92,9872907576,amit.gurung90@college.edu
+STU2024032,Dev,Silwal,10/22/2002,Computer Science,1,A,A-,C,2.61,9888561612,dev.silwal63@college.edu
+STU2024033,Aisha,Bhattarai,6/28/2004,Architecture,1,B,C+,F,1.5,9817275149,aisha.bhattarai47@college.edu
+STU2024034,Siddharth,Pandey,5/12/2001,Computer Science,2,C,A,B+,3.78,9896934122,siddharth.pandey64@college.edu
+STU2024035,Arjun,Silwal,9/12/2005,Civil Engineering,1,B,B,B,2.95,9869934576,arjun.silwal45@college.edu
+STU2024036,Kavya,Limbu,6/27/2000,BSc Physics,4,C,A+,A-,2.98,9869096899,
+STU2024037,Rahul,Joshi,6/16/2004,Business Admin,3,C,A+,,,9822130508,rahul.joshi13@college.edu
+STU2024038,Nisha,Karki,3/15/2004,Law,2,A,A,,3.05,9888270025,nisha.karki60@college.edu
+STU2024039,Riya,Rai,10/29/2000,Medicine,3,C,B,B+,3.63,9886762164,riya.rai38@college.edu
+STU2024040,Priya,Silwal,7/27/2005,BBA,2,C,A-,A,3.12,9814478111,priya.silwal94@college.edu
+STU2024041,Meera,Bista,8/17/2005,BBA,2,B,C,A,3.92,9884801233,meera.bista51@college.edu
+STU2024042,Meera,Shrestha,8/15/2002,Medicine,1,C,C,B,1.79,9850851122,meera.shrestha15@college.edu
+STU2024043,Riya,Limbu,9/24/2001,Law,1,B,B+,C,2.09,,riya.limbu70@college.edu
+STU2024044,Rohan,Gurung,3/28/2000,Computer Science,3,A,F,B+,3.53,9829804386,rohan.gurung77@college.edu
+STU2024045,Aarav,Tamang,3/1/2000,BSc Physics,2,C,C+,F,1.66,9878885632,aarav.tamang58@college.edu
+STU2024046,Siddharth,Sharma,9/6/2000,Medicine,4,B,B-,,1.82,9883599154,siddharth.sharma49@college.edu
+STU2024047,Riya,Gurung,10/27/2004,Medicine,2,,A,B-,3.16,9873655158,
+STU2024048,Riya,Basnet,9/12/2003,Business Admin,4,B,,B,2.94,9874718365,riya.basnet14@college.edu
+STU2024049,Shreya,Silwal,4/17/2000,Mass Communication,3,A,B-,A+,1.86,,shreya.silwal4@college.edu
+STU2024050,Amit,Silwal,12/13/2000,Computer Science,2,,C+,C,2.54,9825276327,amit.silwal15@college.edu

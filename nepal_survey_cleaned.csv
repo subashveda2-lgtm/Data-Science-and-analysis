@@ -1,0 +1,201 @@
+respondent_id,district,province,age,gender,occupation,education_level,monthly_income_nrs,household_size,land_ownership_ropani,electricity_access,drinking_water_source,annual_remittance_nrs,health_insurance,mobile_phone_users,internet_access
+NP0001,Lalitpur,Bagmati,49.0,Male,Student,SLC,72828.0,2.0,10.2,Yes,Jar Water,250705.0,,1,No
+NP0002,Kathmandu,Bagmati,49.0,Female,Daily Wage,SLC,49560.0,3.0,9.23,No,River,341069.0,Yes,5,No
+NP0003,Chitwan,Gandaki,49.0,Male,Doctor,SLC,50893.0,5.0,9.23,No,River,104572.0,No,5,Yes
+NP0004,Pokhara,Bagmati,73.0,Male,Government Job,SLC,25701.0,10.0,14.55,Yes,River,396315.0,Yes,4,No
+NP0005,Pokhara,Bagmati,28.0,Other,Doctor,SLC,72828.0,5.638036809815951,16.38,No,River,250705.0,No,1,No
+NP0006,Bhaktapur,Lumbini,69.0,Other,Business,Masters,72828.0,9.0,9.23,Yes,Jar Water,168384.0,Yes,1,No
+NP0007,Lalitpur,Bagmati,69.0,Female,Daily Wage,SLC,72828.0,5.638036809815951,9.23,No,Well,250705.0,No,5,No
+NP0008,Nepalgunj,Madhesh,29.0,Male,Daily Wage,SLC,42517.0,7.0,2.93,Yes,Jar Water,250705.0,No,3,Yes
+NP0009,Lalitpur,Gandaki,74.0,Other,Government Job,SLC,65866.0,10.0,9.23,Yes,Jar Water,31018.0,No,5,No
+NP0010,Hetauda,Lumbini,44.0,Male,Daily Wage,Masters,125887.0,9.0,9.23,No,Jar Water,250705.0,No,3,No
+NP0011,Dharan,Koshi,19.0,Male,Student,SLC,72828.0,5.0,9.23,Yes,Tap,250705.0,No,1,No
+NP0012,Kathmandu,Gandaki,49.0,Female,Engineer,Primary,125473.0,8.0,13.11,Yes,Tap,46903.0,Yes,5,No
+NP0013,Kathmandu,Madhesh,65.0,Male,Daily Wage,Secondary,71932.0,9.0,3.54,No,Jar Water,341992.0,No,4,No
+NP0014,Lalitpur,Gandaki,49.0,Female,Business,SLC,72828.0,10.0,9.23,No,Jar Water,301011.0,No,2,Yes
+NP0015,Pokhara,Madhesh,68.0,Other,Daily Wage,Primary,72828.0,7.0,9.88,Yes,Jar Water,121750.0,Yes,1,Yes
+NP0016,Pokhara,Madhesh,44.0,Other,Engineer,Secondary,72828.0,2.0,9.23,No,Well,250705.0,Yes,1,Yes
+NP0017,Nepalgunj,Koshi,49.0,Other,Daily Wage,SLC,72828.0,2.0,9.23,No,Well,250705.0,Yes,5,Yes
+NP0018,Hetauda,Gandaki,49.0,Other,Daily Wage,SLC,72828.0,9.0,8.98,No,Well,250705.0,Yes,2,No
+NP0019,Kathmandu,Koshi,73.0,Female,Daily Wage,SLC,72828.0,4.0,18.48,Yes,River,445819.0,No,2,Yes
+NP0020,Nepalgunj,Koshi,65.0,Female,Daily Wage,No Formal Education,72828.0,7.0,11.29,No,River,491084.0,No,2,No
+NP0021,Pokhara,Gandaki,69.0,Other,Daily Wage,SLC,95587.0,8.0,12.71,Yes,River,19555.0,Yes,5,No
+NP0022,Nepalgunj,Bagmati,33.0,Other,Daily Wage,SLC,72828.0,5.638036809815951,9.23,No,River,478795.0,Yes,5,Yes
+NP0023,Dharan,Bagmati,49.0,Other,Daily Wage,SLC,72828.0,7.0,9.23,Yes,River,250705.0,Yes,3,No
+NP0024,Pokhara,Koshi,49.0,Female,Daily Wage,Masters,72828.0,6.0,9.23,Yes,Jar Water,250705.0,No,3,No
+NP0025,Biratnagar,Lumbini,68.0,Other,Engineer,Primary,72828.0,8.0,9.23,No,Well,250705.0,Yes,3,Yes
+NP0026,Hetauda,Koshi,62.0,Female,Student,SLC,84199.0,7.0,9.23,Yes,River,462550.0,No,4,No
+NP0027,Chitwan,Koshi,49.0,Male,Daily Wage,Primary,72828.0,7.0,8.84,Yes,Tap,250705.0,No,1,Yes
+NP0028,Kathmandu,Koshi,42.0,Other,Daily Wage,Secondary,72828.0,2.0,9.23,No,Well,92163.0,Yes,3,No
+NP0029,Bhaktapur,Bagmati,73.0,Female,Business,SLC,131670.0,5.638036809815951,5.49,No,Well,250705.0,Yes,4,Yes
+NP0030,Dharan,Bagmati,20.0,Female,Business,SLC,72828.0,7.0,1.12,Yes,Jar Water,250705.0,No,4,No
+NP0031,Butwal,Bagmati,72.0,Female,Daily Wage,Intermediate,67182.0,6.0,10.15,No,Tap,250705.0,No,5,No
+NP0032,Chitwan,Koshi,48.0,Male,Engineer,SLC,72828.0,5.0,9.23,No,Well,438411.0,No,2,Yes
+NP0033,Bhaktapur,Lumbini,32.0,Other,Daily Wage,No Formal Education,72828.0,6.0,9.23,Yes,Well,208139.0,No,2,No
+NP0034,Pokhara,Bagmati,30.0,Female,Daily Wage,Primary,82561.0,3.0,9.23,Yes,Well,250705.0,No,3,No
+NP0035,Butwal,Gandaki,49.0,Other,Government Job,SLC,82392.0,8.0,9.23,Yes,Well,250705.0,No,1,No
+NP0036,Lalitpur,Gandaki,49.0,Female,Daily Wage,SLC,10751.0,2.0,1.53,No,Tap,97680.0,Yes,1,No
+NP0037,Lalitpur,Gandaki,40.0,Other,Engineer,SLC,72828.0,2.0,9.23,Yes,Tap,250705.0,Yes,1,Yes
+NP0038,Dharan,Madhesh,37.0,Male,Daily Wage,SLC,72828.0,2.0,9.23,No,River,392693.0,No,4,No
+NP0039,Lalitpur,Koshi,70.0,Female,Daily Wage,SLC,7122.0,2.0,12.3,Yes,Jar Water,457331.0,No,4,Yes
+NP0040,Butwal,Gandaki,68.0,Female,Daily Wage,SLC,72828.0,7.0,9.23,Yes,Well,250705.0,No,4,Yes
+NP0041,Butwal,Koshi,73.0,Male,Daily Wage,SLC,72828.0,2.0,9.25,Yes,Well,250705.0,No,5,Yes
+NP0042,Hetauda,Gandaki,49.0,Other,Teacher,SLC,72828.0,6.0,11.09,Yes,Well,459665.0,Yes,4,No
+NP0043,Chitwan,Lumbini,32.0,Female,Daily Wage,SLC,72828.0,3.0,15.84,No,River,250705.0,Yes,1,Yes
+NP0044,Kathmandu,Koshi,19.0,Male,Engineer,SLC,97358.0,9.0,9.23,No,River,250705.0,Yes,1,Yes
+NP0045,Biratnagar,Gandaki,60.0,Female,Daily Wage,SLC,72828.0,5.638036809815951,9.23,No,Well,156443.0,Yes,2,No
+NP0046,Nepalgunj,Bagmati,49.0,Female,Engineer,Bachelors,54841.0,10.0,16.2,No,Well,297775.0,No,1,No
+NP0047,Lalitpur,Koshi,43.0,Female,Daily Wage,Secondary,72828.0,5.638036809815951,9.23,No,Jar Water,316031.0,No,4,No
+NP0048,Dharan,Madhesh,39.0,Other,Student,SLC,72828.0,9.0,6.43,Yes,Jar Water,56256.0,No,4,Yes
+NP0049,Lalitpur,Bagmati,35.0,Male,Daily Wage,Masters,72828.0,6.0,9.51,Yes,Jar Water,250705.0,No,3,Yes
+NP0050,Nepalgunj,Bagmati,73.0,Male,Student,SLC,72828.0,2.0,3.02,No,River,250705.0,No,5,Yes
+NP0051,Chitwan,Madhesh,22.0,Male,Daily Wage,SLC,85984.0,5.638036809815951,9.23,No,Jar Water,149192.0,Yes,1,No
+NP0052,Hetauda,Bagmati,67.0,Male,Student,Primary,120559.0,6.0,9.23,Yes,Tap,238209.0,No,5,Yes
+NP0053,Butwal,Bagmati,35.0,Female,Daily Wage,SLC,13746.0,7.0,17.98,No,Jar Water,250705.0,No,1,Yes
+NP0054,Hetauda,Gandaki,40.0,Other,Daily Wage,Intermediate,100646.0,1.0,9.23,No,Jar Water,284845.0,Yes,2,No
+NP0055,Pokhara,Gandaki,49.0,Male,Daily Wage,SLC,39448.0,5.638036809815951,9.23,Yes,Jar Water,250705.0,No,2,No
+NP0056,Lalitpur,Koshi,50.0,Other,Daily Wage,SLC,28627.0,10.0,9.23,No,Well,250705.0,Yes,5,No
+NP0057,Kathmandu,Koshi,43.0,Male,Daily Wage,SLC,72828.0,5.0,3.45,No,River,250705.0,Yes,4,No
+NP0058,Pokhara,Koshi,61.0,Male,Engineer,SLC,72828.0,6.0,4.95,No,River,250705.0,Yes,3,Yes
+NP0059,Chitwan,Gandaki,71.0,Female,Teacher,Intermediate,72828.0,2.0,9.23,No,Tap,250705.0,No,1,No
+NP0060,Lalitpur,Koshi,52.0,Female,Daily Wage,Bachelors,72828.0,10.0,9.23,No,Tap,250705.0,Yes,1,Yes
+NP0061,Pokhara,Bagmati,39.0,Female,Student,SLC,72828.0,9.0,10.45,No,Jar Water,250705.0,Yes,3,No
+NP0062,Lalitpur,Gandaki,19.0,Other,Teacher,Masters,72828.0,4.0,3.17,Yes,Jar Water,245377.0,Yes,5,Yes
+NP0063,Dharan,Koshi,49.0,Female,Doctor,No Formal Education,146402.0,3.0,9.23,No,Jar Water,143045.0,Yes,5,No
+NP0064,Chitwan,Bagmati,74.0,Female,Engineer,SLC,72828.0,8.0,9.23,No,River,101088.0,Yes,1,No
+NP0065,Biratnagar,Koshi,34.0,Male,Engineer,SLC,72828.0,4.0,8.18,No,Jar Water,424051.0,Yes,2,Yes
+NP0066,Butwal,Lumbini,49.0,Male,Daily Wage,SLC,72828.0,2.0,6.77,No,Jar Water,250705.0,No,3,Yes
+NP0067,Bhaktapur,Koshi,55.0,Female,Daily Wage,SLC,72828.0,6.0,11.96,Yes,Jar Water,250705.0,No,1,Yes
+NP0068,Butwal,Lumbini,34.0,Female,Daily Wage,SLC,48134.0,9.0,15.78,No,Well,85193.0,No,2,No
+NP0069,Butwal,Koshi,20.0,Other,Teacher,SLC,72828.0,5.638036809815951,9.23,Yes,River,250705.0,Yes,5,No
+NP0070,Pokhara,Madhesh,24.0,Other,Engineer,SLC,131313.0,2.0,9.23,No,Jar Water,240603.0,Yes,2,No
+NP0071,Chitwan,Koshi,56.0,Male,Daily Wage,SLC,82369.0,5.0,1.89,Yes,Jar Water,250705.0,Yes,4,No
+NP0072,Lalitpur,Gandaki,45.0,Other,Daily Wage,Secondary,72828.0,10.0,13.57,No,River,134880.0,Yes,1,Yes
+NP0073,Hetauda,Gandaki,40.0,Female,Student,SLC,72828.0,4.0,5.68,No,Tap,250705.0,Yes,3,No
+NP0074,Bhaktapur,Lumbini,64.0,Female,Doctor,No Formal Education,127770.0,7.0,14.47,Yes,Tap,97621.0,Yes,2,No
+NP0075,Nepalgunj,Gandaki,68.0,Male,Daily Wage,SLC,24739.0,9.0,9.23,Yes,Tap,7384.0,Yes,5,No
+NP0076,Pokhara,Bagmati,38.0,Female,Daily Wage,Bachelors,41898.0,10.0,9.23,No,River,386199.0,No,2,Yes
+NP0077,Bhaktapur,Madhesh,45.0,Female,Doctor,SLC,64143.0,5.638036809815951,17.47,No,River,250705.0,Yes,5,No
+NP0078,Biratnagar,Madhesh,56.0,Female,Business,SLC,72828.0,9.0,6.67,No,River,414589.0,No,4,No
+NP0079,Dharan,Bagmati,50.0,Female,Daily Wage,Intermediate,72828.0,1.0,11.65,No,Jar Water,154677.0,No,5,No
+NP0080,Chitwan,Lumbini,25.0,Other,Daily Wage,Intermediate,72828.0,10.0,2.83,No,Jar Water,297680.0,Yes,3,Yes
+NP0081,Nepalgunj,Bagmati,42.0,Other,Daily Wage,Bachelors,108435.0,5.0,7.0,Yes,Jar Water,353580.0,No,4,No
+NP0082,Pokhara,Bagmati,49.0,Other,Doctor,SLC,8648.0,1.0,9.23,No,River,397034.0,No,2,Yes
+NP0083,Butwal,Madhesh,54.0,Other,Daily Wage,SLC,72828.0,3.0,9.23,No,Tap,250705.0,Yes,1,Yes
+NP0084,Kathmandu,Koshi,49.0,Other,Daily Wage,Primary,72828.0,5.0,9.23,No,Tap,92009.0,No,5,Yes
+NP0085,Pokhara,Madhesh,34.0,Male,Farmer,SLC,72828.0,5.638036809815951,9.23,Yes,Tap,320316.0,No,3,No
+NP0086,Kathmandu,Madhesh,20.0,Female,Daily Wage,Intermediate,72828.0,6.0,9.23,No,Jar Water,448867.0,No,1,Yes
+NP0087,Butwal,Gandaki,63.0,Male,Daily Wage,SLC,101622.0,6.0,9.23,No,River,250705.0,Yes,1,Yes
+NP0088,Dharan,Bagmati,45.0,Female,Daily Wage,SLC,73724.0,1.0,9.23,No,River,250705.0,Yes,4,Yes
+NP0089,Chitwan,Madhesh,18.0,Female,Daily Wage,Secondary,104883.0,3.0,9.23,Yes,Well,212593.0,No,2,Yes
+NP0090,Lalitpur,Bagmati,51.0,Female,Daily Wage,SLC,72828.0,3.0,9.23,Yes,Well,433580.0,No,1,Yes
+NP0091,Pokhara,Gandaki,69.0,Male,Doctor,SLC,72828.0,10.0,9.23,No,Well,250705.0,Yes,3,No
+NP0092,Hetauda,Bagmati,52.0,Female,Farmer,SLC,66295.0,7.0,9.23,No,Tap,270155.0,No,5,No
+NP0093,Butwal,Madhesh,61.0,Female,Business,SLC,128594.0,2.0,14.78,Yes,Tap,250705.0,No,5,No
+NP0094,Pokhara,Bagmati,49.0,Other,Daily Wage,SLC,11560.0,5.638036809815951,9.23,Yes,Tap,250705.0,No,5,Yes
+NP0095,Biratnagar,Gandaki,65.0,Other,Teacher,SLC,90984.0,1.0,9.23,Yes,Tap,250705.0,No,4,No
+NP0096,Dharan,Koshi,65.0,Female,Daily Wage,Masters,72828.0,5.638036809815951,9.23,No,Jar Water,250705.0,No,3,Yes
+NP0097,Biratnagar,Bagmati,60.0,Other,Daily Wage,SLC,72828.0,5.638036809815951,8.47,Yes,Jar Water,50009.0,No,1,Yes
+NP0098,Bhaktapur,Madhesh,30.0,Male,Daily Wage,Bachelors,72828.0,5.638036809815951,9.23,Yes,Jar Water,250705.0,No,3,No
+NP0099,Chitwan,Gandaki,41.0,Female,Daily Wage,SLC,72828.0,7.0,7.25,Yes,Jar Water,73721.0,No,4,No
+NP0100,Bhaktapur,Madhesh,45.0,Male,Daily Wage,Intermediate,72828.0,7.0,9.23,Yes,Well,250323.0,Yes,4,Yes
+NP0101,Pokhara,Madhesh,22.0,Other,Daily Wage,SLC,72828.0,8.0,9.23,No,River,169660.0,Yes,2,Yes
+NP0102,Nepalgunj,Bagmati,60.0,Other,Daily Wage,SLC,41641.0,6.0,9.23,No,River,490642.0,Yes,3,No
+NP0103,Nepalgunj,Madhesh,49.0,Male,Daily Wage,SLC,72828.0,3.0,9.23,No,Well,250705.0,Yes,5,No
+NP0104,Chitwan,Bagmati,57.0,Female,Teacher,SLC,72828.0,6.0,4.53,Yes,Well,3580.0,No,4,No
+NP0105,Hetauda,Koshi,38.0,Other,Engineer,SLC,84787.0,5.0,2.75,Yes,Jar Water,136726.0,Yes,4,Yes
+NP0106,Dharan,Madhesh,60.0,Other,Teacher,No Formal Education,72828.0,5.638036809815951,1.54,No,River,250705.0,Yes,2,Yes
+NP0107,Hetauda,Madhesh,72.0,Other,Government Job,SLC,72828.0,10.0,9.23,No,River,123480.0,Yes,5,Yes
+NP0108,Dharan,Madhesh,25.0,Male,Daily Wage,Bachelors,30478.0,10.0,9.23,No,Jar Water,234218.0,No,4,No
+NP0109,Butwal,Lumbini,64.0,Male,Daily Wage,SLC,72828.0,2.0,15.42,No,River,395185.0,No,1,Yes
+NP0110,Pokhara,Lumbini,75.0,Other,Daily Wage,Bachelors,72828.0,1.0,9.23,Yes,Jar Water,139981.0,No,5,Yes
+NP0111,Bhaktapur,Gandaki,37.0,Female,Daily Wage,Masters,72828.0,3.0,9.23,Yes,River,172818.0,No,3,Yes
+NP0112,Nepalgunj,Lumbini,50.0,Male,Daily Wage,SLC,72828.0,5.638036809815951,9.23,No,River,250705.0,No,2,No
+NP0113,Biratnagar,Gandaki,37.0,Female,Government Job,SLC,123919.0,10.0,9.23,No,River,305377.0,No,1,No
+NP0114,Lalitpur,Lumbini,49.0,Male,Business,SLC,102258.0,1.0,15.33,No,Tap,378998.0,Yes,1,Yes
+NP0115,Kathmandu,Koshi,49.0,Male,Farmer,SLC,146608.0,5.638036809815951,2.62,No,Jar Water,250705.0,No,3,No
+NP0116,Lalitpur,Gandaki,49.0,Female,Teacher,Masters,114871.0,5.0,7.53,Yes,River,250705.0,Yes,2,Yes
+NP0117,Bhaktapur,Lumbini,43.0,Female,Daily Wage,Bachelors,45507.0,5.638036809815951,9.23,Yes,Tap,250705.0,Yes,4,No
+NP0118,Bhaktapur,Koshi,62.0,Female,Engineer,Primary,72828.0,7.0,9.23,Yes,Jar Water,342718.0,No,2,No
+NP0119,Dharan,Lumbini,36.0,Male,Business,SLC,30957.0,8.0,9.23,Yes,Well,188508.0,No,4,No
+NP0120,Hetauda,Bagmati,53.0,Female,Daily Wage,No Formal Education,72828.0,10.0,9.23,No,Well,250705.0,No,3,No
+NP0121,Lalitpur,Bagmati,49.0,Female,Doctor,Primary,111985.0,5.638036809815951,9.23,No,Well,123890.0,Yes,3,No
+NP0122,Dharan,Koshi,30.0,Female,Engineer,SLC,78332.0,5.638036809815951,8.75,Yes,Well,250705.0,No,1,Yes
+NP0123,Dharan,Madhesh,44.0,Female,Doctor,SLC,72828.0,5.0,8.22,No,Well,350112.0,No,1,No
+NP0124,Hetauda,Madhesh,49.0,Female,Teacher,Secondary,72828.0,5.638036809815951,9.23,No,Well,61983.0,Yes,1,No
+NP0125,Biratnagar,Bagmati,42.0,Female,Doctor,Masters,72828.0,9.0,4.75,No,Well,244001.0,Yes,3,No
+NP0126,Nepalgunj,Bagmati,61.0,Female,Daily Wage,No Formal Education,72828.0,5.638036809815951,8.88,Yes,Well,250705.0,Yes,4,Yes
+NP0127,Chitwan,Madhesh,65.0,Male,Daily Wage,SLC,121574.0,6.0,9.23,No,Tap,250705.0,Yes,3,No
+NP0128,Nepalgunj,Gandaki,75.0,Female,Daily Wage,Masters,66895.0,7.0,14.97,No,Tap,250705.0,No,3,Yes
+NP0129,Kathmandu,Madhesh,29.0,Male,Daily Wage,SLC,72828.0,2.0,9.23,Yes,Well,250705.0,Yes,1,Yes
+NP0130,Lalitpur,Lumbini,57.0,Other,Daily Wage,SLC,72828.0,5.0,9.23,Yes,Tap,263465.0,Yes,2,No
+NP0131,Nepalgunj,Gandaki,54.0,Other,Daily Wage,SLC,72828.0,10.0,9.23,Yes,Jar Water,483973.0,No,1,Yes
+NP0132,Chitwan,Lumbini,37.0,Male,Engineer,SLC,72828.0,8.0,16.17,Yes,River,469299.0,Yes,2,Yes
+NP0133,Butwal,Bagmati,43.0,Female,Business,No Formal Education,72828.0,9.0,9.23,No,Well,465463.0,Yes,4,No
+NP0134,Lalitpur,Gandaki,53.0,Male,Business,Bachelors,72828.0,5.0,9.23,Yes,Well,368866.0,Yes,4,Yes
+NP0135,Chitwan,Lumbini,71.0,Other,Daily Wage,SLC,109369.0,5.638036809815951,9.23,No,Jar Water,403618.0,Yes,5,Yes
+NP0136,Dharan,Lumbini,49.0,Male,Daily Wage,SLC,72828.0,4.0,9.23,Yes,Well,163042.0,Yes,5,No
+NP0137,Bhaktapur,Gandaki,49.0,Other,Daily Wage,SLC,72828.0,7.0,19.69,No,Jar Water,361910.0,Yes,5,Yes
+NP0138,Biratnagar,Koshi,36.0,Male,Business,Bachelors,37023.0,10.0,9.23,No,Jar Water,250705.0,Yes,4,No
+NP0139,Kathmandu,Madhesh,49.0,Male,Daily Wage,SLC,72828.0,1.0,9.23,Yes,River,250705.0,No,1,No
+NP0140,Chitwan,Lumbini,45.0,Male,Government Job,SLC,29031.0,1.0,9.23,No,River,250705.0,Yes,1,Yes
+NP0141,Nepalgunj,Madhesh,68.0,Male,Daily Wage,SLC,60602.0,4.0,9.23,No,River,493163.0,No,1,No
+NP0142,Bhaktapur,Madhesh,49.0,Male,Engineer,SLC,72828.0,5.0,9.23,Yes,River,154684.0,No,3,No
+NP0143,Nepalgunj,Bagmati,56.0,Other,Doctor,Secondary,72828.0,4.0,9.23,Yes,Jar Water,250705.0,No,5,Yes
+NP0144,Lalitpur,Madhesh,59.0,Male,Business,Secondary,72828.0,5.638036809815951,9.23,No,Jar Water,322240.0,No,1,No
+NP0145,Chitwan,Lumbini,38.0,Male,Daily Wage,SLC,72828.0,5.0,9.23,Yes,River,115788.0,No,5,Yes
+NP0146,Nepalgunj,Bagmati,47.0,Male,Daily Wage,Bachelors,72828.0,5.0,5.0,Yes,Well,250705.0,No,5,Yes
+NP0147,Hetauda,Gandaki,46.0,Female,Daily Wage,SLC,58793.0,5.638036809815951,12.82,Yes,Jar Water,250705.0,No,3,No
+NP0148,Pokhara,Lumbini,46.0,Other,Doctor,Bachelors,72828.0,2.0,9.23,Yes,River,250705.0,No,4,No
+NP0149,Bhaktapur,Bagmati,49.0,Male,Business,No Formal Education,72828.0,1.0,9.23,Yes,River,80313.0,No,1,Yes
+NP0150,Butwal,Bagmati,31.0,Other,Business,Masters,72828.0,5.638036809815951,2.05,No,Jar Water,238539.0,No,3,Yes
+NP0151,Bhaktapur,Madhesh,50.0,Male,Daily Wage,SLC,66079.0,7.0,9.23,Yes,Jar Water,392028.0,Yes,4,No
+NP0152,Nepalgunj,Gandaki,48.0,Female,Teacher,Masters,72828.0,3.0,17.02,No,Well,317581.0,No,4,No
+NP0153,Nepalgunj,Lumbini,68.0,Other,Daily Wage,Bachelors,72828.0,5.638036809815951,5.7,No,Well,195887.0,No,1,Yes
+NP0154,Kathmandu,Lumbini,75.0,Female,Business,SLC,72828.0,7.0,9.23,No,River,218022.0,Yes,5,No
+NP0155,Hetauda,Madhesh,68.0,Female,Government Job,SLC,77685.0,9.0,9.23,Yes,River,368019.0,No,2,Yes
+NP0156,Butwal,Gandaki,65.0,Male,Daily Wage,SLC,72828.0,4.0,18.11,Yes,Well,250705.0,No,5,No
+NP0157,Biratnagar,Lumbini,28.0,Other,Daily Wage,Secondary,39076.0,9.0,9.23,Yes,River,250705.0,No,5,Yes
+NP0158,Kathmandu,Gandaki,60.0,Other,Daily Wage,Bachelors,146614.0,9.0,9.23,No,River,250705.0,Yes,2,Yes
+NP0159,Lalitpur,Lumbini,23.0,Other,Daily Wage,Bachelors,72828.0,5.638036809815951,18.93,No,Jar Water,397069.0,Yes,4,No
+NP0160,Butwal,Madhesh,36.0,Other,Farmer,Masters,50743.0,2.0,9.23,No,Jar Water,281814.0,Yes,2,No
+NP0161,Chitwan,Koshi,50.0,Male,Daily Wage,SLC,72828.0,7.0,9.23,No,River,420476.0,Yes,2,No
+NP0162,Pokhara,Lumbini,60.0,Male,Student,SLC,11758.0,1.0,6.99,No,River,250705.0,Yes,3,No
+NP0163,Kathmandu,Bagmati,58.0,Female,Daily Wage,SLC,39551.0,5.638036809815951,9.23,Yes,River,250705.0,Yes,3,No
+NP0164,Pokhara,Bagmati,57.0,Male,Daily Wage,No Formal Education,72828.0,1.0,9.23,Yes,River,250705.0,No,3,No
+NP0165,Hetauda,Koshi,39.0,Other,Daily Wage,SLC,72828.0,8.0,10.04,No,River,250705.0,No,4,No
+NP0166,Lalitpur,Lumbini,23.0,Male,Daily Wage,No Formal Education,67372.0,2.0,9.23,Yes,Jar Water,129743.0,Yes,2,Yes
+NP0167,Lalitpur,Bagmati,70.0,Female,Farmer,Primary,72828.0,6.0,19.89,No,Jar Water,250705.0,No,1,Yes
+NP0168,Biratnagar,Bagmati,49.0,Other,Daily Wage,Bachelors,72828.0,10.0,7.5,No,Jar Water,250705.0,Yes,2,Yes
+NP0169,Lalitpur,Lumbini,33.0,Other,Farmer,SLC,72828.0,7.0,9.23,No,River,312378.0,Yes,4,Yes
+NP0170,Nepalgunj,Gandaki,61.0,Female,Doctor,Secondary,74564.0,10.0,9.23,Yes,River,250705.0,Yes,3,No
+NP0171,Bhaktapur,Lumbini,37.0,Female,Daily Wage,SLC,18736.0,7.0,9.23,Yes,River,412809.0,No,4,Yes
+NP0172,Bhaktapur,Gandaki,49.0,Other,Daily Wage,Bachelors,72828.0,7.0,9.23,Yes,River,42923.0,No,3,No
+NP0173,Biratnagar,Koshi,69.0,Male,Business,SLC,72828.0,5.0,9.23,No,River,250705.0,No,4,Yes
+NP0174,Nepalgunj,Madhesh,30.0,Male,Daily Wage,SLC,72828.0,2.0,2.75,Yes,Tap,234224.0,No,1,No
+NP0175,Bhaktapur,Koshi,27.0,Other,Daily Wage,No Formal Education,34792.0,7.0,9.23,Yes,Jar Water,276914.0,No,3,Yes
+NP0176,Chitwan,Madhesh,49.0,Other,Daily Wage,SLC,72828.0,1.0,9.23,Yes,Jar Water,368976.0,No,3,No
+NP0177,Nepalgunj,Bagmati,49.0,Other,Teacher,SLC,129845.0,6.0,13.92,No,River,250705.0,Yes,2,No
+NP0178,Hetauda,Bagmati,33.0,Male,Daily Wage,Bachelors,72828.0,3.0,9.23,Yes,Jar Water,40948.0,Yes,4,Yes
+NP0179,Dharan,Bagmati,48.0,Male,Student,Masters,99906.0,10.0,14.11,Yes,Well,250705.0,Yes,5,Yes
+NP0180,Pokhara,Gandaki,57.0,Other,Government Job,No Formal Education,72828.0,8.0,9.23,No,Well,250705.0,Yes,5,No
+NP0181,Nepalgunj,Madhesh,72.0,Female,Daily Wage,SLC,72828.0,5.638036809815951,9.23,Yes,River,250705.0,No,2,No
+NP0182,Pokhara,Bagmati,67.0,Other,Student,Primary,72828.0,2.0,1.58,No,River,32379.0,No,4,Yes
+NP0183,Chitwan,Lumbini,22.0,Other,Daily Wage,SLC,137078.0,7.0,5.12,No,Well,250705.0,Yes,1,No
+NP0184,Dharan,Madhesh,47.0,Male,Daily Wage,SLC,63077.0,2.0,16.7,Yes,Well,250705.0,Yes,2,Yes
+NP0185,Butwal,Madhesh,44.0,Other,Student,SLC,72828.0,4.0,10.98,No,Well,473373.0,Yes,3,No
+NP0186,Biratnagar,Gandaki,49.0,Male,Government Job,No Formal Education,141695.0,7.0,14.54,Yes,Well,250705.0,Yes,1,Yes
+NP0187,Nepalgunj,Koshi,58.0,Female,Daily Wage,Secondary,84070.0,10.0,9.23,No,Tap,250705.0,Yes,4,Yes
+NP0188,Biratnagar,Gandaki,54.0,Other,Business,SLC,125073.0,7.0,9.23,Yes,Well,250705.0,Yes,3,No
+NP0189,Lalitpur,Bagmati,30.0,Female,Daily Wage,No Formal Education,72828.0,5.638036809815951,5.76,No,Well,250705.0,Yes,5,Yes
+NP0190,Pokhara,Lumbini,63.0,Other,Farmer,Secondary,72828.0,2.0,6.02,Yes,Tap,250705.0,Yes,4,No
+NP0191,Pokhara,Lumbini,62.0,Female,Daily Wage,SLC,72828.0,7.0,0.95,Yes,Jar Water,250705.0,Yes,3,No
+NP0192,Lalitpur,Bagmati,42.0,Male,Teacher,Secondary,110281.0,5.0,9.23,Yes,Jar Water,172028.0,Yes,4,No
+NP0193,Butwal,Lumbini,49.0,Other,Daily Wage,SLC,116745.0,6.0,9.23,Yes,Jar Water,250705.0,Yes,3,Yes
+NP0194,Kathmandu,Gandaki,49.0,Other,Business,Primary,33301.0,4.0,9.14,No,Jar Water,250705.0,Yes,4,No
+NP0195,Hetauda,Gandaki,33.0,Female,Daily Wage,SLC,72828.0,5.638036809815951,9.23,Yes,Tap,231651.0,Yes,5,Yes
+NP0196,Nepalgunj,Bagmati,27.0,Male,Daily Wage,Intermediate,72828.0,5.638036809815951,18.1,Yes,Well,250705.0,No,2,Yes
+NP0197,Pokhara,Lumbini,59.0,Female,Government Job,SLC,24265.0,2.0,11.93,Yes,Tap,356670.0,Yes,3,Yes
+NP0198,Hetauda,Madhesh,49.0,Female,Daily Wage,Intermediate,26178.0,5.638036809815951,9.23,Yes,Jar Water,250705.0,No,3,No
+NP0199,Pokhara,Koshi,49.0,Male,Daily Wage,Bachelors,89439.0,5.638036809815951,10.31,No,Jar Water,250705.0,No,5,No
+NP0200,Kathmandu,Madhesh,75.0,Female,Government Job,Masters,43884.0,5.638036809815951,4.84,Yes,Jar Water,250705.0,No,2,Yes

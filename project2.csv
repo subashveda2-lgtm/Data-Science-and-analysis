@@ -1,0 +1,51 @@
+﻿order_id,product_name,category,quantity,unit_price,total_price,salesperson,region,order_date,customer_name
+1,Laptop Pro 15,Electronics,2,1200,2400,Alice Johnson,North,1/3/2024,John Smith
+2,Wireless Mouse,Electronics,5,25.5,127.5,Bob Lee,South,1/5/2024,Emma Davis
+3,Office Chair,Furniture,,350,,Carol White,East,1/7/2024,Liam Brown
+4,Notebook Set,Stationery,10,8.99,89.9,David Kim,West,1/9/2024,
+5,USB-C Hub,Electronics,3,45,135,Alice Johnson,North,1/11/2024,Olivia Wilson
+6,Standing Desk,Furniture,1,,,Bob Lee,South,1/13/2024,
+7,Mechanical Keyboard,Electronics,2,110,220,Carol White,East,1/15/2024,Ava Taylor
+8,Monitor 27inch,Electronics,1,350,350,,West,1/17/2024,Sophia Anderson
+9,Pen Drive 64GB,Accessories,8,12,96,David Kim,North,1/19/2024,James Thomas
+10,Desk Lamp,Furniture,4,30,120,Alice Johnson,South,,William Jackson
+11,Headphones Pro,Electronics,2,199,398,Bob Lee,East,1/23/2024,Isabella White
+12,Webcam HD,Electronics,,60,,Carol White,West,1/25/2024,Benjamin Harris
+13,A4 Paper Ream,Stationery,20,6.5,130,David Kim,North,1/27/2024,
+14,Laptop Stand,Accessories,3,40,120,Alice Johnson,South,1/29/2024,Charlotte Martin
+15,Printer Ink,Accessories,6,18,108,,East,1/31/2024,Henry Garcia
+16,External SSD,Electronics,2,95,190,Bob Lee,West,2/2/2024,Amelia Martinez
+17,Conference Phone,Electronics,1,250,250,Carol White,North,2/4/2024,Alexander Robinson
+18,Ergonomic Mouse,Electronics,4,,,David Kim,South,2/6/2024,
+19,Whiteboard,Stationery,2,75,150,Alice Johnson,East,2/8/2024,Ethan Rodriguez
+20,Cable Organizer,Accessories,15,5,75,Bob Lee,,2/10/2024,Harper Lewis
+21,Gaming Chair,Furniture,1,480,480,Carol White,West,2/12/2024,
+22,Tablet 10inch,Electronics,3,320,960,David Kim,North,2/14/2024,Abigail Lee
+23,Phone Stand,Accessories,7,10,70,Alice Johnson,South,2/16/2024,Matthew Walker
+24,Projector,Electronics,1,700,700,,East,2/18/2024,Ella Hall
+25,Filing Cabinet,Furniture,,200,,Bob Lee,West,2/20/2024,Daniel Allen
+26,Bluetooth Speaker,Electronics,4,55,220,Carol White,North,2/22/2024,Scarlett Young
+27,Stapler Set,Stationery,12,7.5,90,David Kim,,2/24/2024,Victoria Hernandez
+28,Power Bank,Accessories,5,35,175,Alice Johnson,South,2/26/2024,
+29,Smart Watch,Electronics,2,199,398,Bob Lee,East,2/28/2024,Jack King
+30,Desk Organizer,Furniture,6,22,132,Carol White,West,,Zoe Wright
+31,HDMI Cable,Accessories,10,9,90,David Kim,North,3/3/2024,Luke Scott
+32,Wireless Charger,Electronics,3,,,Alice Johnson,South,3/5/2024,
+33,Laser Pointer,Accessories,8,15,120,Bob Lee,East,3/7/2024,Logan Adams
+34,Bookshelf,Furniture,1,150,150,,West,3/9/2024,Chloe Baker
+35,Noise Cancelling Headset,Electronics,2,230,460,Carol White,North,3/11/2024,Ryan Gonzalez
+36,Whiteboard Markers,Stationery,30,3,90,David Kim,South,3/13/2024,
+37,Laptop Bag,Accessories,4,45,180,Alice Johnson,East,3/15/2024,Aria Nelson
+38,Smart Keyboard,Electronics,2,130,260,Bob Lee,,3/17/2024,Owen Carter
+39,Sofa Chair,Furniture,1,620,620,Carol White,West,3/19/2024,Penelope Mitchell
+40,USB Charger,Accessories,10,,,David Kim,North,3/21/2024,
+41,Drawing Tablet,Electronics,1,280,280,Alice Johnson,South,3/23/2024,Layla Roberts
+42,Paper Shredder,Accessories,2,85,170,,East,3/25/2024,Nora Turner
+43,Portable Monitor,Electronics,1,320,320,Bob Lee,West,3/27/2024,
+44,Chair Mat,Furniture,3,40,120,Carol White,North,3/29/2024,Sebastian Phillips
+45,Label Maker,Stationery,5,25,125,David Kim,South,,Ava Campbell
+46,Ring Light,Accessories,2,65,130,Alice Johnson,East,4/2/2024,Mason Parker
+47,Smart Display,Electronics,,450,,Bob Lee,West,4/4/2024,Lily Evans
+48,Office Sofa,Furniture,1,900,900,Carol White,,4/6/2024,Elijah Edwards
+49,Sticky Notes Pack,Stationery,25,4,100,David Kim,North,4/8/2024,
+50,Docking Station,Electronics,2,180,360,Alice Johnson,South,4/10/2024,Grace Collins
