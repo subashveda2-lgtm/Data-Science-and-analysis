@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Annaprashan Invitation - Fully Customizable</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #1a1a1a; padding: 12px; color: #333; }
+    .wrap { display: flex; gap: 14px; align-items: flex-start; }
+
+    /* ── PANEL ── */
+    .panel { width: 280px; flex-shrink: 0; background: #fff; border-radius: 12px; padding: 14px; border: 1px solid #ddd; max-height: 98vh; overflow-y: auto; }
+    .panel-title { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: #222; }
+    .sec { font-size: 10px; font-weight: 700; color: #888; margin: 13px 0 6px; border-bottom: 1px solid #eee; padding-bottom: 3px; text-transform: uppercase; letter-spacing: 0.6px; }
+    .field-group { margin-bottom: 8px; }
+    .field-label { font-size: 11px; color: #555; margin-bottom: 3px; display: block; }
+    .field-group input,
+    .field-group textarea,
+    .field-group select { width: 100%; font-size: 12px; padding: 5px 8px; border-radius: 6px; border: 1px solid #ccc; font-family: inherit; background: #fafafa; }
+    .field-group input[type="color"] { height: 32px; padding: 2px 4px; cursor: pointer; }
+    .field-group textarea { resize: vertical; min-height: 44px; }
+    .field-group input[type="range"] { padding: 0; background: none; border: none; cursor: pointer; }
+    .row2 { display: flex; gap: 8px; }
+    .row2 .field-group { flex: 1; }
+    .dl-btn { width: 100%; margin-top: 14px; padding: 10px; background: #D4AF37; color: #4a2800; font-weight: 700; font-size: 13px; border: none; border-radius: 8px; cursor: pointer; }
+    .dl-btn:hover { background: #c9a020; }
+    .dl-btn:disabled { opacity: 0.6; cursor: default; }
+    #status { font-size: 11px; color: #888; margin-top: 5px; text-align: center; }
+    .hint { font-size: 10px; color: #aaa; margin-top: 2px; }
+
+    /* ── PREVIEW ── */
+    .preview { flex: 1; overflow-x: auto; }
+    canvas { width: 100%; border-radius: 10px; display: block; box-shadow: 0 6px 30px rgba(0,0,0,0.5); }
+
+    /* tabs */
+    .tabs { display: flex; gap: 4px; margin-bottom: 10px; flex-wrap: wrap; }
+    .tab { font-size: 11px; padding: 4px 10px; border-radius: 20px; border: 1px solid #ddd; background: #f5f5f5; cursor: pointer; color: #555; }
+    .tab.active { background: #D4AF37; color: #4a2800; border-color: #D4AF37; font-weight: 700; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <!-- ══ EDITOR PANEL ══ -->
+  <div class="panel">
+    <div class="panel-title">✏️ Customize Invitation</div>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('text')">📝 Text</div>
+      <div class="tab" onclick="switchTab('design')">🎨 Design</div>
+      <div class="tab" onclick="switchTab('font')">🔤 Font</div>
+      <div class="tab" onclick="switchTab('layout')">📐 Layout</div>
+    </div>
+
+    <!-- ══ TEXT TAB ══ -->
+    <div class="tab-content active" id="tab-text">
+      <div class="sec">Child Details</div>
+      <div class="field-group"><span class="field-label">नातिनीको नाम / Name</span><input id="f-name" value="आर्विका"/></div>      
+      <div class="field-group"><span class="field-label">बुबाको नाम</span><input id="f-buba" value="सुभाष"/></div>
+      <div class="field-group"><span class="field-label">आमाको नाम</span><input id="f-aama" value="सविता"/></div>
+
+      <div class="sec">Invitation Text</div>
+      <div class="field-group"><span class="field-label">Invitation Body Line 1</span><input id="f-body1" value="को शुभ अन्नप्राशन कार्यक्रममा यहाँको गरिमामय उपस्थितिको लागि"/></div>
+      <div class="field-group"><span class="field-label">Invitation Body Line 2</span><input id="f-body2" value="हार्दिक निमन्त्रणा गर्दछौं।"/></div>
+      <div class="field-group"><span class="field-label">Bottom Blessing Text</span><input id="f-blessing" value="❈   शुभम् भवतु   ❈"/></div>
+
+      <div class="sec">Event Details</div>
+      <div class="field-group"><span class="field-label">मिति Label</span><input id="f-date-label" value="मिति:"/></div>
+      <div class="field-group"><span class="field-label">मिति Value</span><input id="f-date" value="२०८३ असार १७ गते"/></div>
+      <div class="field-group"><span class="field-label">समय Label</span><input id="f-time-label" value="समय:"/></div>
+      <div class="field-group"><span class="field-label">समय Value</span><input id="f-time" value="बेलुका ४:०० बजे"/></div>
+      <div class="field-group"><span class="field-label">स्थान Label</span><input id="f-loc-label" value="स्थान,"/></div>
+      <div class="field-group"><span class="field-label">स्थान (Enter = next line)</span><textarea id="f-location" rows="2" placeholder="स्थान...">पार्टी प्यालेस, काठमाडौं</textarea></div>
+      <div class="field-group"><span class="field-label">Left Column Title</span><input id="f-col-left-title" value="कार्यक्रम:"/></div>
+
+      <div class="sec">Center Column</div>
+      <div class="field-group"><span class="field-label">Center Column Title</span><input id="f-col-center-title" value="दर्शनाभिलाषी:"/></div>
+      <div class="field-group"><span class="field-label">Center Column Value</span><input id="f-col-center-val" value="समस्त परिवार"/></div>
+
+      <div class="sec">Phone Numbers</div>
+      <div class="field-group"><span class="field-label">Phone Section Label</span><input id="f-phone-label" value="सम्पर्क नम्बरहरु"/></div>
+      <div class="field-group"><span class="field-label">फोन नम्बर १</span><input id="f-phone1" placeholder="98XXXXXXXX"/></div>
+      <div class="field-group"><span class="field-label">फोन नम्बर २</span><input id="f-phone2" placeholder="98XXXXXXXX"/></div>
+      <div class="field-group"><span class="field-label">फोन नम्बर ३</span><input id="f-phone3" placeholder="98XXXXXXXX"/></div>
+
+      <div class="sec">Right Column (Prarthi)</div>
+      <div class="field-group"><span class="field-label">Right Column Title</span><input id="f-col-right-title" value="प्रार्थी:"/></div>
+      <div class="field-group"><span class="field-label">हजुरबुबा Label</span><input id="f-hbuba-label" value="हजुरबुबा -"/></div>
+      <div class="field-group"><span class="field-label">हजुरबुबाको नाम</span><input id="f-hbuba" value="राम प्रसाद सिटौला"/></div>
+      <div class="field-group"><span class="field-label">हजुरआमा Label</span><input id="f-haama-label" value="हजुरआमा -"/></div>
+      <div class="field-group"><span class="field-label">हजुरआमाको नाम</span><input id="f-haama" value="शान्ता सिटौला"/></div>
+    </div>
+
+    <!-- ══ DESIGN TAB ══ -->
+    <div class="tab-content" id="tab-design">
+      <div class="sec">Background</div>
+      <div class="field-group"><span class="field-label">Background Color</span><input type="color" id="c-bg" value="#8B0000"/></div>
+      <div class="field-group"><span class="field-label">Inner Glow Color</span><input type="color" id="c-glow" value="#A01414"/></div>
+      <div class="field-group"><span class="field-label">Glow Intensity (0–1)</span><input type="range" id="c-glow-alpha" min="0" max="1" step="0.05" value="0.38"/>
+        <div class="hint" id="hint-glow">0.38</div></div>
+
+      <div class="sec">Gold / Accent</div>
+      <div class="field-group"><span class="field-label">Gold Color</span><input type="color" id="c-gold" value="#D4AF37"/></div>
+      <div class="field-group"><span class="field-label">Dark Gold</span><input type="color" id="c-dgold" value="#B8940F"/></div>
+
+      <div class="sec">Text Colors</div>
+      <div class="field-group"><span class="field-label">Heading / Name Color</span><input type="color" id="c-cream" value="#F8E96A"/></div>
+      <div class="field-group"><span class="field-label">Body Text Color</span><input type="color" id="c-light" value="#FFE8A0"/></div>
+      <div class="field-group"><span class="field-label">Petal Color</span><input type="color" id="c-white" value="#FFF8E7"/></div>
+
+      <div class="sec">Flower</div>
+      <div class="field-group"><span class="field-label">Flower Background</span><input type="color" id="c-dred" value="#6B0000"/></div>
+      <div class="field-group"><span class="field-label">Flower Size</span><input type="range" id="c-flower-size" min="80" max="240" step="4" value="178"/>
+        <div class="hint" id="hint-flower">178px</div></div>
+      <div class="field-group"><span class="field-label">Number of Petals</span>
+        <select id="c-petals"><option value="6">6</option><option value="8" selected>8</option><option value="10">10</option><option value="12">12</option></select></div>
+
+      <div class="sec">Borders</div>
+      <div class="field-group"><span class="field-label">Outer Border Width</span><input type="range" id="c-border-outer" min="1" max="10" step="0.5" value="4"/>
+        <div class="hint" id="hint-border-outer">4px</div></div>
+      <div class="field-group"><span class="field-label">Inner Border Width</span><input type="range" id="c-border-inner" min="0.5" max="5" step="0.5" value="1.4"/>
+        <div class="hint" id="hint-border-inner">1.4px</div></div>
+      <div class="field-group"><span class="field-label">Corner Radius</span><input type="range" id="c-radius" min="0" max="60" step="2" value="18"/>
+        <div class="hint" id="hint-radius">18px</div></div>
+    </div>
+
+    <!-- ══ FONT TAB ══ -->
+    <div class="tab-content" id="tab-font">
+      <div class="sec">Font Family</div>
+      <div class="field-group"><span class="field-label">Font</span>
+        <select id="f-font">
+          <option value="serif" selected>Serif (Default)</option>
+          <option value="sans-serif">Sans-Serif</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="'Times New Roman', serif">Times New Roman</option>
+          <option value="cursive">Cursive</option>
+        </select>
+      </div>
+
+      <div class="sec">Font Sizes</div>
+      <div class="field-group"><span class="field-label">Header Line 1 Size</span><input type="range" id="fs-h1" min="40" max="140" step="2" value="88"/>
+        <div class="hint" id="hint-fs-h1">88px</div></div>
+      <div class="field-group"><span class="field-label">Header Line 2 Size</span><input type="range" id="fs-h2" min="40" max="130" step="2" value="78"/>
+        <div class="hint" id="hint-fs-h2">78px</div></div>
+      <div class="field-group"><span class="field-label">Title Line Size</span><input type="range" id="fs-title" min="30" max="100" step="2" value="60"/>
+        <div class="hint" id="hint-fs-title">60px</div></div>
+      <div class="field-group"><span class="field-label">Child Name Size</span><input type="range" id="fs-name" min="60" max="180" step="2" value="128"/>
+        <div class="hint" id="hint-fs-name">128px</div></div>
+      <div class="field-group"><span class="field-label">Parents Line Size</span><input type="range" id="fs-parents" min="24" max="70" step="2" value="42"/>
+        <div class="hint" id="hint-fs-parents">42px</div></div>
+      <div class="field-group"><span class="field-label">Main Title Size</span><input type="range" id="fs-main" min="50" max="150" step="2" value="96"/>
+        <div class="hint" id="hint-fs-main">96px</div></div>
+      <div class="field-group"><span class="field-label">Body Text Size</span><input type="range" id="fs-body" min="20" max="70" step="2" value="40"/>
+        <div class="hint" id="hint-fs-body">40px</div></div>
+      <div class="field-group"><span class="field-label">Column Text Size</span><input type="range" id="fs-col" min="20" max="60" step="2" value="34"/>
+        <div class="hint" id="hint-fs-col">34px</div></div>
+      <div class="field-group"><span class="field-label">Column Title Size</span><input type="range" id="fs-col-title" min="20" max="60" step="2" value="38"/>
+        <div class="hint" id="hint-fs-col-title">38px</div></div>
+      <div class="field-group"><span class="field-label">Phone Text Size</span><input type="range" id="fs-phone" min="20" max="60" step="2" value="34"/>
+        <div class="hint" id="hint-fs-phone">34px</div></div>
+    </div>
+
+    <!-- ══ LAYOUT TAB ══ -->
+    <div class="tab-content" id="tab-layout">
+      <div class="sec">Canvas Size</div>
+      <div class="row2">
+        <div class="field-group"><span class="field-label">Width (px)</span><input type="number" id="l-width" value="1400" min="600" max="3000" step="50"/></div>
+        <div class="field-group"><span class="field-label">Height (px)</span><input type="number" id="l-height" value="1700" min="800" max="4000" step="50"/></div>
+      </div>
+      <button style="width:100%;padding:6px;margin-top:4px;border-radius:6px;border:1px solid #ccc;background:#f5f5f5;cursor:pointer;font-size:12px;" onclick="resizeCanvas()">Apply Size</button>
+
+      <div class="sec">Vertical Positions</div>
+      <div class="field-group"><span class="field-label">Header Line 1 Y</span><input type="range" id="ly-h1" min="60" max="300" step="4" value="148"/>
+        <div class="hint" id="hint-ly-h1">148</div></div>      
+      <div class="field-group"><span class="field-label">Flower Center Y</span><input type="range" id="ly-flower" min="200" max="800" step="4" value="490"/>
+        <div class="hint" id="hint-ly-flower">490</div></div>
+      <div class="field-group"><span class="field-label">Child Name Y</span><input type="range" id="ly-name" min="500" max="1100" step="4" value="864"/>
+        <div class="hint" id="hint-ly-name">864</div></div>
+      <div class="field-group"><span class="field-label">Parents Line Y</span><input type="range" id="ly-parents" min="600" max="1200" step="4" value="924"/>
+        <div class="hint" id="hint-ly-parents">924</div></div>
+      <div class="field-group"><span class="field-label">Body Text Y</span><input type="range" id="ly-body" min="800" max="1400" step="4" value="1152"/>
+        <div class="hint" id="hint-ly-body">1152</div></div>
+      <div class="field-group"><span class="field-label">Bottom Columns Y</span><input type="range" id="ly-cols" min="900" max="1600" step="4" value="1286"/>
+        <div class="hint" id="hint-ly-cols">1286</div></div>
+
+      <div class="sec">Spacing</div>
+      <div class="field-group"><span class="field-label">Column Line Height</span><input type="range" id="l-lh" min="28" max="90" step="2" value="52"/>
+        <div class="hint" id="hint-l-lh">52px</div></div>
+      <div class="field-group"><span class="field-label">Side Ornament X Offset</span><input type="range" id="l-rose-x" min="30" max="150" step="4" value="54"/>
+        <div class="hint" id="hint-l-rose-x">54px</div></div>
+    </div>
+
+    <button class="dl-btn" id="dl-btn" onclick="downloadImage()">⬇ Download PNG</button>
+    <div id="status"></div>
+  </div>
+
+  <!-- ══ CANVAS PREVIEW ══ -->
+  <div class="preview">
+    <canvas id="c" width="1400" height="1700"></canvas>
+  </div>
+</div>
+
+<script>
+// ── State ──
+var W=1400, H=1700;
+
+function gv(id){ return document.getElementById(id).value||''; }
+function gn(id){ return parseFloat(document.getElementById(id).value)||0; }
+function gc(id){ return document.getElementById(id).value||'#000000'; }
+
+// ── Tab switching ──
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
+  document.querySelectorAll('.tab-content').forEach(function(t){ t.classList.remove('active'); });
+  document.querySelector('[onclick="switchTab(\''+name+'\')"]').classList.add('active');
+  document.getElementById('tab-'+name).classList.add('active');
+}
+
+// ── Range hint updaters ──
+var rangeHints = {
+  'c-glow-alpha':'hint-glow','c-flower-size':'hint-flower',
+  'c-border-outer':'hint-border-outer','c-border-inner':'hint-border-inner','c-radius':'hint-radius',
+  'fs-h1':'hint-fs-h1','fs-title':'hint-fs-title','fs-name':'hint-fs-name','fs-parents':'hint-fs-parents','fs-body':'hint-fs-body',
+  'fs-col':'hint-fs-col','fs-col-title':'hint-fs-col-title','fs-phone':'hint-fs-phone',
+  'ly-h1':'hint-ly-h1','ly-flower':'hint-ly-flower','ly-name':'hint-ly-name','ly-parents':'hint-ly-parents',
+  'ly-body':'hint-ly-body','ly-cols':'hint-ly-cols','l-lh':'hint-l-lh','l-rose-x':'hint-l-rose-x'
+};
+Object.keys(rangeHints).forEach(function(id){
+  var el=document.getElementById(id);
+  var hint=document.getElementById(rangeHints[id]);
+  if(el&&hint){
+    el.addEventListener('input',function(){ hint.textContent=el.value+(el.type==='range'&&parseFloat(el.value)>1?'px':''); drawCard(); });
+  }
+});
+
+// ── Resize canvas ──
+function resizeCanvas(){
+  var cw=parseInt(gv('l-width'))||1400;
+  var ch=parseInt(gv('l-height'))||1700;
+  W=cw; H=ch;
+  // Update range maxes
+  document.getElementById('ly-flower').max=H*0.6;
+  document.getElementById('ly-name').max=H*0.8;
+  document.getElementById('ly-cols').max=H-200;
+  var canvas=document.getElementById('c');
+  canvas.width=W; canvas.height=H;
+  drawCard();
+}
+
+// ── MAIN DRAW ──
+function drawCard(){
+  var canvas=document.getElementById('c');
+  var ctx=canvas.getContext('2d');
+
+  // Collect values
+  var name        = gv('f-name')||'आर्विका';
+  var buba        = gv('f-buba')||'सुभाष';
+  var aama        = gv('f-aama')||'सविता';
+  var body1       = gv('f-body1')||'को शुभ अन्नप्राशन कार्यक्रममा यहाँको गरिमामय उपस्थितिको लागि';
+  var body2       = gv('f-body2')||'हार्दिक निमन्त्रणा गर्दछौं।';
+  var blessing    = gv('f-blessing')||'❈   शुभम् भवतु   ❈';
+  var dateLabel   = gv('f-date-label')||'मिति:';
+  var dateVal     = gv('f-date')||'२०८३ असार १७ गते';
+  var timeLabel   = gv('f-time-label')||'समय:';
+  var timeVal     = gv('f-time')||'बेलुका ४:०० बजे';
+  var locLabel    = gv('f-loc-label')||'स्थान,';
+  var loc         = gv('f-location');
+  var colLTitle   = gv('f-col-left-title')||'कार्यक्रम:';
+  var colCTitle   = gv('f-col-center-title')||'दर्शनाभिलाषी:';
+  var colCVal     = gv('f-col-center-val')||'समस्त परिवार';
+  var phoneLabel  = gv('f-phone-label')||'सम्पर्क नम्बरहरु';
+  var ph1=gv('f-phone1'), ph2=gv('f-phone2'), ph3=gv('f-phone3');
+  var colRTitle   = gv('f-col-right-title')||'प्रार्थी:';
+  var hbubaLabel  = gv('f-hbuba-label')||'हजुरबुबा -';
+  var hbuba       = gv('f-hbuba')||'राम प्रसाद सिटौला';
+  var haamaLabel  = gv('f-haama-label')||'हजुरआमा -';
+  var haama       = gv('f-haama')||'शान्ता सिटौला';
+
+  // Colors
+  var BG    = gc('c-bg');
+  var GLOW  = gc('c-glow');
+  var GALPHA= parseFloat(gv('c-glow-alpha'))||0.38;
+  var GOLD  = gc('c-gold');
+  var DGOLD = gc('c-dgold');
+  var CREAM = gc('c-cream');
+  var LIGHT = gc('c-light');
+  var WHITE = gc('c-white');
+  var DRED  = gc('c-dred');
+
+  // Sizes
+  var FONT      = gv('f-font')||'serif';
+  var FSH1      = gn('fs-h1')||88;
+  var FSH2      = gn('fs-h2')||78;
+  var FSTITLE   = gn('fs-title')||60;
+  var FSNAME    = gn('fs-name')||128;
+  var FSPARENTS = gn('fs-parents')||42;
+  var FSBODY    = gn('fs-body')||40;
+  var FSCOL     = gn('fs-col')||34;
+  var FSCOLTTL  = gn('fs-col-title')||38;
+  var FSPHONE   = gn('fs-phone')||34;
+  var FSIZE     = gn('c-flower-size')||178;
+  var NPETALS   = parseInt(gv('c-petals'))||8;
+  var BOUTER    = gn('c-border-outer')||4;
+  var BINNER    = gn('c-border-inner')||1.4;
+  var RADIUS    = gn('c-radius')||18;
+
+  // Layout
+  var LYH1     = gn('ly-h1')||148;
+  var LYFLOWER = gn('ly-flower')||490;
+  var LYNAME   = gn('ly-name')||864;
+  var LYPAR    = gn('ly-parents')||924;
+  var LYBODY   = gn('ly-body')||1152;
+  var LYCOLS   = gn('ly-cols')||1286;
+  var LH       = gn('l-lh')||52;
+  var ROSEX    = gn('l-rose-x')||54;
+
+  // ── Background ──
+  ctx.fillStyle=BG;
+  rr(ctx,0,0,W,H,RADIUS); ctx.fill();
+
+  // Glow
+  var hexToRgb=function(h){ var r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16); return r+','+g+','+b; };
+  var grd=ctx.createRadialGradient(W/2,H*0.3,120,W/2,H*0.3,750);
+  grd.addColorStop(0,'rgba('+hexToRgb(GLOW)+','+GALPHA+')');
+  grd.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=grd; rr(ctx,0,0,W,H,RADIUS); ctx.fill();
+
+  // Borders
+  ctx.strokeStyle=GOLD; ctx.lineWidth=BOUTER;
+  rr(ctx,20,20,W-40,H-40,RADIUS-4); ctx.stroke();
+  ctx.lineWidth=BINNER;
+  rr(ctx,32,32,W-64,H-64,RADIUS-8); ctx.stroke();
+
+  // Corners
+  corner(ctx,38,38,1,1,GOLD);
+  corner(ctx,W-38,38,-1,1,GOLD);
+  corner(ctx,38,H-38,1,-1,GOLD);
+  corner(ctx,W-38,H-38,-1,-1,GOLD);
+
+  // Top diamond
+  ctx.fillStyle=GOLD;
+  diam(ctx,W/2,21,7,13); ctx.fill();
+  line(ctx,W/2-80,21,W/2-11,21,1.4,GOLD);
+  line(ctx,W/2+11,21,W/2+80,21,1.4,GOLD);
+
+  // Side ornaments
+  roseOutline(ctx,ROSEX,H*0.47,GOLD);
+  roseOutline(ctx,W-ROSEX,H*0.47,GOLD);
+
+  // ── FLOWER ──
+  flower(ctx,W/2,LYFLOWER,FSIZE,NPETALS,GOLD,DGOLD,DRED,WHITE);
+
+  // ── CHILD TEXT ──
+  ctx.textAlign='center';
+  ctx.fillStyle=CREAM;
+  ctx.font='bold '+FSTITLE+'px '+FONT;
+  ctx.fillText("हाम्री आयुष्मती नातिनी", W/2, LYH1);
+
+  ctx.font='bold '+FSNAME+'px '+FONT;
+  ctx.fillText("सुश्री "+name,W/2,LYNAME);
+
+  ctx.fillStyle=LIGHT;
+  ctx.font=FSPARENTS+'px '+FONT;
+  ctx.fillText('( श्रीमान् '+buba+' तथा श्रीमती '+aama+' की सुपुत्री )',W/2,LYPAR);
+
+  line(ctx,380,LYPAR+28,W-380,LYPAR+28,1.2,GOLD);
+
+  // -- INVITATION TEXT --
+  ctx.fillStyle=LIGHT;
+  ctx.font=FSBODY+'px '+FONT;
+  ctx.fillText(body1,W/2,LYBODY);
+  ctx.fillText(body2,W/2,LYBODY+FSBODY+12);
+
+  // ── DIVIDER ──
+  var divY=LYBODY+FSBODY+60;
+  line(ctx,100,divY,W-100,divY,2,GOLD);
+  ctx.fillStyle=GOLD;
+  diam(ctx,W/2,divY,7,12); ctx.fill();
+  dot(ctx,W/2-38,divY,5,GOLD);
+  dot(ctx,W/2+38,divY,5,GOLD);
+
+  // ── BOTTOM 3 COLS ──
+  var colsTop=divY+16;
+  ctx.strokeStyle=GOLD; ctx.lineWidth=1.4; ctx.globalAlpha=0.5;
+  ctx.beginPath(); ctx.moveTo(440,colsTop); ctx.lineTo(440,colsTop+280); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(W-440,colsTop); ctx.lineTo(W-440,colsTop+280); ctx.stroke();
+  ctx.globalAlpha=1;
+
+  var cL=220, cC=W/2, cR=W-220;
+  var y0=LYCOLS;
+
+  // Left
+  ctx.textAlign='center';
+  ctx.fillStyle=CREAM; ctx.font='bold '+FSCOLTTL+'px '+FONT;
+  ctx.fillText(colLTitle,cL,y0);
+  ctx.fillStyle=LIGHT; ctx.font=FSCOL+'px '+FONT;
+  ctx.fillText(dateLabel+' '+dateVal,cL,y0+LH);
+  ctx.fillText(timeLabel+' '+timeVal,cL,y0+LH*2);
+  ctx.fillText(locLabel,cL,y0+LH*3);
+  var locLines=loc.split('\n').filter(function(l){return l.trim();});
+  if(locLines.length>0){
+    ctx.fillText(locLines[0],cL,y0+LH*4);
+    if(locLines[1]) ctx.fillText(locLines[1],cL,y0+LH*5);
+  } else {
+    ctx.strokeStyle=GOLD; ctx.lineWidth=1.8; ctx.setLineDash([7,5]);
+    ctx.beginPath(); ctx.moveTo(cL-100,y0+LH*4+10); ctx.lineTo(cL+100,y0+LH*4+10); ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  // Center
+  ctx.fillStyle=CREAM; ctx.font='bold '+FSCOLTTL+'px '+FONT;
+  ctx.fillText(colCTitle,cC,y0);
+  ctx.fillStyle=LIGHT; ctx.font=FSCOL+'px '+FONT;
+  ctx.fillText(colCVal,cC,y0+LH);
+  smallFlower(ctx,cC,y0+LH*3+10,GOLD);
+
+  // Right
+  ctx.fillStyle=CREAM; ctx.font='bold '+FSCOLTTL+'px '+FONT;
+  ctx.fillText(colRTitle,cR,y0);
+  ctx.fillStyle=LIGHT; ctx.font=FSCOL+'px '+FONT;
+  ctx.fillText(hbubaLabel,cR,y0+LH);
+  ctx.fillText(hbuba,cR,y0+LH*2);
+  ctx.fillText(haamaLabel,cR,y0+LH*3);
+  ctx.fillText(haama,cR,y0+LH*4);
+
+  // ── PHONES ──
+  var phones=[ph1,ph2,ph3].filter(Boolean);
+  var phoneY=y0+LH*5+60;
+  if(phones.length>0){
+    line(ctx,100,phoneY-30,W-100,phoneY-30,1.4,GOLD);
+    ctx.fillStyle=CREAM; ctx.font='bold '+FSPHONE+'px '+FONT;
+    ctx.fillText(phoneLabel,W/2,phoneY);
+    ctx.fillStyle=LIGHT; ctx.font=FSPHONE+'px '+FONT;
+    phones.forEach(function(p,i){ ctx.fillText(p,W/2,phoneY+FSPHONE+10+i*(FSPHONE+10)); });
+  }
+
+  // ── BOTTOM ──
+  line(ctx,100,H-96,W-100,H-96,2,GOLD);
+  ctx.fillStyle=GOLD; ctx.globalAlpha=0.88; ctx.font='32px '+FONT;
+  ctx.fillText(blessing,W/2,H-46);
+  ctx.globalAlpha=1;
+}
+
+// ── Helpers ──
+function rr(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y);
+  ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+  ctx.lineTo(x+w,y+h-r);
+  ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  ctx.lineTo(x+r,y+h);
+  ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+  ctx.lineTo(x,y+r);
+  ctx.quadraticCurveTo(x,y,x+r,y);
+  ctx.closePath();
+}
+function line(ctx,x1,y1,x2,y2,w,col){ ctx.strokeStyle=col||'#D4AF37'; ctx.lineWidth=w; ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke(); }
+function diam(ctx,x,y,rw,rh){ ctx.beginPath(); ctx.moveTo(x,y-rh); ctx.lineTo(x+rw,y); ctx.lineTo(x,y+rh); ctx.lineTo(x-rw,y); ctx.closePath(); }
+function dot(ctx,x,y,r,col){ ctx.fillStyle=col||'#D4AF37'; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); }
+
+function corner(ctx,x,y,sx,sy,GOLD){
+  ctx.save(); ctx.translate(x,y); ctx.scale(sx,sy);
+  ctx.strokeStyle=GOLD; ctx.lineWidth=2.5;
+  ctx.beginPath(); ctx.moveTo(0,0); ctx.quadraticCurveTo(80,0,80,80); ctx.stroke();
+  ctx.lineWidth=1.4;
+  ctx.beginPath(); ctx.moveTo(0,0); ctx.quadraticCurveTo(120,0,120,120); ctx.stroke();
+  ctx.fillStyle=GOLD;
+  ctx.beginPath(); ctx.arc(18,18,5,0,Math.PI*2); ctx.fill();
+  ctx.globalAlpha=0.78;
+  ctx.beginPath(); ctx.moveTo(98,16); ctx.quadraticCurveTo(110,36,98,56); ctx.quadraticCurveTo(86,36,98,16); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(80,36); ctx.quadraticCurveTo(98,48,116,36); ctx.quadraticCurveTo(98,24,80,36); ctx.fill();
+  ctx.beginPath(); ctx.arc(98,36,6.5,0,Math.PI*2); ctx.fill();
+  ctx.globalAlpha=1;
+  ctx.lineWidth=1.8;
+  ctx.beginPath(); ctx.moveTo(0,120); ctx.quadraticCurveTo(40,108,46,80); ctx.stroke();
+  ctx.beginPath(); ctx.arc(18,110,4,0,Math.PI*2); ctx.fill();
+  ctx.restore();
+}
+
+function roseOutline(ctx,x,y,GOLD){
+  ctx.save(); ctx.translate(x,y);
+  ctx.strokeStyle=GOLD; ctx.lineWidth=1.6; ctx.globalAlpha=0.36;
+  ctx.beginPath(); ctx.arc(0,0,50,0,Math.PI*2); ctx.stroke();
+  for(var i=0;i<5;i++){
+    ctx.save(); ctx.rotate(i*Math.PI*2/5);
+    ctx.beginPath(); ctx.moveTo(0,-48); ctx.quadraticCurveTo(22,-16,16,10); ctx.quadraticCurveTo(0,0,0,-48); ctx.stroke();
+    ctx.restore();
+  }
+  ctx.globalAlpha=1; ctx.restore();
+}
+
+function flower(ctx,x,y,SIZE,NPETALS,GOLD,DGOLD,DRED,WHITE){
+  ctx.save(); ctx.translate(x,y);
+  ctx.strokeStyle=GOLD; ctx.lineWidth=3;
+  ctx.beginPath(); ctx.arc(0,0,SIZE,0,Math.PI*2); ctx.stroke();
+  ctx.fillStyle=DRED;
+  ctx.beginPath(); ctx.arc(0,0,SIZE-10,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle=WHITE;
+  var pr=SIZE*0.6, pw=SIZE*0.25, ph=SIZE*0.37;
+  for(var i=0;i<NPETALS;i++){
+    ctx.save(); ctx.rotate(i*Math.PI*2/NPETALS);
+    ctx.beginPath(); ctx.ellipse(0,-pr,pw,ph,0,0,Math.PI*2);
+    ctx.fill(); ctx.restore();
+  }
+  var cg=ctx.createRadialGradient(0,0,6,0,0,SIZE*0.25);
+  cg.addColorStop(0,'#FFD700'); cg.addColorStop(1,GOLD);
+  ctx.fillStyle=cg;
+  ctx.beginPath(); ctx.arc(0,0,SIZE*0.25,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle=DGOLD;
+  ctx.beginPath(); ctx.arc(0,0,SIZE*0.15,0,Math.PI*2); ctx.fill();
+  ctx.fillStyle='#7a5800';
+  var sd=SIZE*0.09;
+  [[0,-sd],[sd*0.75,sd*0.5],[-sd*0.75,sd*0.5]].forEach(function(p){
+    ctx.beginPath(); ctx.arc(p[0],p[1],SIZE*0.028,0,Math.PI*2); ctx.fill();
+  });
+  ctx.fillStyle=GOLD;
+  for(var j=0;j<8;j++){
+    var a=j*Math.PI/4;
+    ctx.beginPath(); ctx.arc(Math.cos(a)*(SIZE-4),Math.sin(a)*(SIZE-4),3.5,0,Math.PI*2); ctx.fill();
+  }
+  ctx.globalAlpha=0.8;
+  var leafAngles=[[-0.55,-0.71],[0.55,-0.71],[-0.71,-0.55],[0.71,-0.55],[-0.71,0.55],[0.71,0.55],[0.55,0.71],[-0.55,0.71]];
+  leafAngles.forEach(function(p){
+    ctx.save(); ctx.translate(p[0]*SIZE*0.75,p[1]*SIZE*0.75);
+    ctx.fillStyle=GOLD;
+    ctx.beginPath(); ctx.ellipse(0,0,7,13,Math.atan2(p[1],p[0])+Math.PI/2,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  });
+  ctx.globalAlpha=1;
+  ctx.restore();
+}
+
+function smallFlower(ctx,x,y,GOLD){
+  ctx.save(); ctx.translate(x,y);
+  ctx.strokeStyle=GOLD; ctx.lineWidth=1.6;
+  ctx.beginPath(); ctx.arc(0,0,32,0,Math.PI*2); ctx.stroke();
+  ctx.fillStyle=GOLD;
+  for(var i=0;i<4;i++){
+    ctx.save(); ctx.rotate(i*Math.PI/2);
+    ctx.beginPath(); ctx.moveTo(0,-28); ctx.quadraticCurveTo(8,-14,0,0); ctx.quadraticCurveTo(-8,-14,0,-28);
+    ctx.globalAlpha=0.65; ctx.fill(); ctx.globalAlpha=1; ctx.restore();
+  }
+  ctx.beginPath(); ctx.arc(0,0,7,0,Math.PI*2); ctx.fill();
+  ctx.restore();
+}
+
+// ── Wire all inputs ──
+document.querySelectorAll('input:not([type="range"]):not([type="color"]):not([type="number"]), textarea, select').forEach(function(el){
+  el.addEventListener('input', drawCard);
+});
+document.querySelectorAll('input[type="color"]').forEach(function(el){
+  el.addEventListener('input', drawCard);
+});
+
+// ── Download ──
+function downloadImage(){
+  var btn=document.getElementById('dl-btn'), st=document.getElementById('status');
+  btn.disabled=true; btn.textContent='Saving...';
+  drawCard();
+  setTimeout(function(){
+    var a=document.createElement('a');
+    a.download='annaprashan_invitation.png';
+    a.href=document.getElementById('c').toDataURL('image/png');
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    btn.textContent='⬇ Download PNG'; btn.disabled=false;
+    st.textContent='✓ Saved!';
+  },150);
+}
+
+drawCard();
+</script>
+</body>
+</html>
